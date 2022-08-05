@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja pierwsza strona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/secondHeader.css">
+    <link rel="stylesheet" href="css/containerTable.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1 class="header__tittle">Grzegorz Didyk</h1>
+        <img class="header__picture js-picture" src="https://i.postimg.cc/597V21Hw/gd.png" alt="Grzesiek">
+        <div class="header__buttonContainer">
+            <button class="button js-changeFotobutton">Usuń zdjęcie</button>
+            <button class="button js-changeThemebutton">Zmień motyw</button>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li class="navigation__item"><a class="navigation__link" href="#o-mnie">O mnie</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#doswiadczenie-zawodowe">Doświadczenie
+                    zawodowe</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#wyksztalcenie">Wykształcenie</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#dodatkowe-informacje">Dodatkowe
+                    informacje</a>
+            </li>
+            <li class="navigation__item"><a class="navigation__link" href="#podroze">Podróże</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article id="o-mnie">
+            <h2 class="secondHeader">O mnie</h2>
+            <p>Cześć, Nazywam się Grzesiek. Pochodzę z Rzepina. Od dwóch lat mieszkam w Poznaniu gdzie pracuję jako
+                Specjalista ds. projektów e-commerce. Posiadam duże doświadczenie w zarządzaniu projektami tworzenia i
+                technicznego utrzymywania sklepów internetowych po stronie klienta. Znam i lubię pracować na platformach
+                Magento. Ze względu na swoje wykształcenie i zainteresowania moim zawodowym celem jest przejście na
+                drugą stronę takich projektów - chciałbym być odpowiedzialny za proces tworzenia sklepów po stronie
+                firmy wdrażającej.</p>
+        </article>
+        <section id="doswiadczenie-zawodowe">
+            <h2 class="secondHeader">Doświadczenie zawodowe</h2>
+            <div class="containerTable">
+                <table class="table">
+                    <caption class="table__caption">Moje dotychczasowe doświadczenie zawodowe</caption>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="col">Nazwa firmy</th>
+                        <th class="table__cell table__cell--header" scope="col">Lata pracy</th>
+                        <th class="table__cell table__cell--header" scope="col">Stanowisko</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">CDRL S.A.</th>
+                        <td class="table__cell">V.2021 - obecnie</td>
+                        <td class="table__cell">Specjalista ds. Projektów e-commerce</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Święty Wojciech Dom Medialny sp. z o.o.
+                        </th>
+                        <td class="table__cell">XI.2019 - IV.2021</td>
+                        <td class="table__cell" rowspan="2">Specjalista ds. e-commerce</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Eobuwie.pl S.A.</th>
+                        <td class="table__cell">IV.2018 - X.2019</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">NOVOTIME</th>
+                        <td class="table__cell">X.2017 - III.2018</td>
+                        <td class="table__cell">Analityk e-commerce</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">ITM Poland S.A.</th>
+                        <td class="table__cell">III.2016 - IX.2017</td>
+                        <td class="table__cell">Specjalista ds. technicznych</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">Hertz Systems Ltd Sp. Z o.o.</th>
+                        <td class="table__cell">VII.2012 - II.2016</td>
+                        <td class="table__cell">Manager kart SIM i serwisu</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="wyksztalcenie">
+            <h2 class="secondHeader">Wykształcenie</h2>
+            <ul>
+                <li>2007-2012 Uniwersytet Zielonogórski, kierunek: Informatyka, zakończone tytułem Inżyniera</li>
+            </ul>
+        </section>
+        <section id="dodatkowe-informacje">
+            <h2 class="secondHeader">Dodatkowe informacje</h2>
+            <ol>
+                <li>Znajomość języków obcych:
+                    <ul>
+                        <li>Język angielski – poziom komunikatywny</li>
+                    </ul>
+                </li>
+                <li>Zainteresowania:
+                    <ul>
+                        <li>piłka nożna</li>
+                        <li>muzyka</li>
+                        <li>książki Johna Grishama</li>
+                        <li>podróże</li>
+                    </ul>
+                </li>
+                <li>Inne
+                    <ul>
+                        <li>prawo jazdy kategorii B,</li>
+                        <li>podstawy HTML, CSS,</li>
+                        <li>znajomość platform: Magento, WooCommerce, Sote, IdoSell Shop, Kentico,
+                        </li>
+                        <li>znajomość narzędzi do zarządzania projektami: Redmine, Asana, Mantis,
+                            Trello,</li>
+                        <li>obsługa pakietu MS Office,</li>
+                        <li>obsługa prostych programów graficznych.</li>
+                    </ul>
+            </ol>
+        </section>
+        <section class="section" id="podroze">
+            <h2 class="secondHeader">Podróże</h2>
+            <p>Uwielbiam podróże a to są kraje, które ostatno zwiedziłem: </p>
+            <p class="section__paragraph js-flagParagraph">Francja</p>
+            <div class="js-flagContainer"></div>
+            <button class="section__button js-flagButton">Pierwszy kraj</button>
+        </section>
+    </main>
+    <footer class="footer">© Copyright Grzegorz Didyk - YouCode Frontend Developer od podstaw</footer>
+</body>
+
+</html>

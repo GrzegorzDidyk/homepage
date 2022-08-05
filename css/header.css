@@ -1,0 +1,28 @@
+.header__tittle {
+    color: midnightblue;
+    text-align: center;
+}
+
+.header__picture {
+    display: block;
+    margin: 30px auto;
+}
+
+.noPicture {
+    display: none;
+}
+
+.header__buttonContainer {
+    text-align: center;
+}
+
+.button {
+    font-size: 15px;
+    padding: 15px;
+    font-weight: 700;
+}
+
+.changeTheme {
+    background-color: #000;
+    color: #fff;
+}
