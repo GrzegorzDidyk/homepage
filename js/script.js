@@ -2,6 +2,11 @@
     const onChangeThemeClick = () => {
         body.classList.toggle("changeTheme");
     };
+
+    const onChangeFotoClick =  () => {
+        picture.classList.toggle("noPicture");
+        buttonFoto.innerText = picture.classList.contains("noPicture") ? "Pokaż zdjęcie" : "Usuń zdjęcie";
+    };
     
     let buttonTheme = document.querySelector(".js-changeThemebutton");
     let body = document.body;
@@ -14,10 +19,7 @@
     
     buttonTheme.addEventListener("click", onChangeThemeClick);
     
-    buttonFoto.addEventListener("click", () => {
-        picture.classList.toggle("noPicture");
-        buttonFoto.innerText = picture.classList.contains("noPicture") ? "Pokaż zdjęcie" : "Usuń zdjęcie";
-    });
+    buttonFoto.addEventListener("click", onChangeFotoClick);
     
     flagButton.addEventListener("click", () => {
         switch (flagButton.innerText) {
