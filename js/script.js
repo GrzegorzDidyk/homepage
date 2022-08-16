@@ -4,13 +4,13 @@
         body.classList.toggle("changeTheme");
     };
 
-    const onChangeFotoClick = () => {
+    const onChangeFotoClick = (buttonFoto) => {
         const picture = document.querySelector(".js-picture");
         picture.classList.toggle("noPicture");
         buttonFoto.innerText = picture.classList.contains("noPicture") ? "Pokaż zdjęcie" : "Usuń zdjęcie";
     };
 
-    const onChangeFlagSectionClick = () => {
+    const onChangeFlagSectionClick = (flagButton) => {
         const flagContainer = document.querySelector(".js-flagContainer");
         const flagParagraph = document.querySelector(".js-flagParagraph");
         switch (flagButton.innerText) {
@@ -58,8 +58,9 @@
         let buttonFoto = document.querySelector(".js-changeFotobutton");
         let flagButton = document.querySelector(".js-flagButton");
         buttonTheme.addEventListener("click", onChangeThemeClick);
-        buttonFoto.addEventListener("click", onChangeFotoClick);
-        flagButton.addEventListener("click", onChangeFlagSectionClick);
+        buttonFoto.addEventListener("click", () => { onChangeFotoClick(buttonFoto); });
+        flagButton.addEventListener("click", () => { onChangeFlagSectionClick(flagButton); });
+
     };
 
     init();
